@@ -139,7 +139,7 @@ export default class ResponsiveReactGridLayout extends React.Component {
     const lastBreakpoint = this.state.breakpoint;
 
     // Breakpoint change
-    if (lastBreakpoint !== newBreakpoint || this.props.breakpoints !== breakpoints || this.props.cols !== cols) {
+    if (lastBreakpoint !== newBreakpoint || this.props.breakpoints !== breakpoints || this.props.cols !== cols || this.props.rowHeight !== this.state.rowHeight) {
       // Preserve the current layout if the current breakpoint is not present in the next layouts.
       if (!(lastBreakpoint in layouts)) layouts[lastBreakpoint] = cloneLayout(this.state.layout);
 
