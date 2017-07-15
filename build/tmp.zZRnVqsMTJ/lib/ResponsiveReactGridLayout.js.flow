@@ -105,6 +105,7 @@ export default class ResponsiveReactGridLayout extends React.Component {
       || nextProps.breakpoint !== this.props.breakpoint
       || !isEqual(nextProps.breakpoints, this.props.breakpoints)
       || !isEqual(nextProps.cols, this.props.cols)
+      || nextProps.rowHeight !== this.props.rowHeight
     ) {
       this.onWidthChange(nextProps);
     }
