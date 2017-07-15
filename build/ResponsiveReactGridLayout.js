@@ -141,7 +141,7 @@ var ResponsiveReactGridLayout = function (_React$Component) {
       this.props.onBreakpointChange(newBreakpoint, newCols);
       this.props.onWidthChange(nextProps.width, nextProps.margin, newCols, nextProps.containerPadding);
 
-      this.setState({ breakpoint: newBreakpoint, layout: _layout, cols: newCols });
+      this.setState({ breakpoint: newBreakpoint, layout: _layout, cols: newCols, rowHeight: this.props.rowHeight });
     }
   };
 
